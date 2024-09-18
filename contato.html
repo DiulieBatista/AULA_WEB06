@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    
+    , initial-scale=1.0">
+    <title>Aula HTML/CSS </title>
+   <link rel="stylesheet" href="estilo.css">
+
+</head>
+<body>
+<!-- menu  nav -->
+<nav>
+ <ul>
+  <li><a href="index.html"target="_top">INICIO</a></li>
+  <li><a href="servicos.html"target="_top">SERVIÇOS</a></li>
+  <li><a href="sobre.html"target="_top">SOBRE</a></li>
+  <li><a href="contato.html"target="_top">CONTATO</a></li>
+  
+
+ </ul>
+
+</nav>
+<!-- baner  -->
+
+
+<!-- elementos  seleção do conteudo  -->
+<main class="formulario">
+
+
+    <P>
+        Para agendar o seu evento, por favor, preencha o formulário abaixo. Um especialista da nossa equipe entrará em contato com você para garantir que o seu evento seja um momento mágico
+
+
+
+
+    </P>
+
+    <h2 > FORMULARIO DE AGENDAMENTO </h2>
+    <table align="center" >
+      <tr><td>
+    <fieldset>
+<br>
+    <legend> Imforme seus dados </legend> 
+    <form action="" method="post">
+
+     <br>
+
+    <label > nome :</label> 
+    <input type="text" name ="nome" id=" nome " maxlength="80" size = "30" placeholder=" digite seu nome" required> 
+  
+       <br><br>
+    
+       <label > E-mail :</label> <!-- não pode deixar o texto solto tem que colocar a tag-->
+    <input type="email" name ="mail" id="mail " maxlength="80" size = "30" placeholder=" digite seu email"required> 
+    
+    <br><br>
+    
+    <label > telefone  :</label> <!-- não pode deixar o texto solto tem que colocar a tag-->
+    <input type="tel" name ="fone" id="fone" maxlength="80" size = "30" placeholder=" digite seu telefone"required> 
+    
+    <br><br>
+
+
+    <label > Data do evento   :</label> <!-- não pode deixar o texto solto tem que colocar a tag-->
+    <input type="date" name ="data_eve" id="data_eve" min="1900-01-01" max="2006-06-25" > 
+    
+<br><br>
+    <label> horario evento </label>
+    <br/>
+    <input type="radio" name="manha " id="manha" value="M"required/> <!-- Required deixa obrigatorio preencher o campo -->
+    <label> manha </label>
+    <br/>
+    <input type="radio" name="tarde" id="tarde" value="T"required/> <!-- radio e para escolher somente uma opção -->
+    <label> tarde</label>
+    <br/>
+    <input type="radio" name="noite" id="noite" value="N"required/>
+    <label> noite </label>
+    <br/>
+    
+    <br/><br/>
+
+
+    <label> local do evento  </label>
+    <br/>
+    <input type="checkbox" name="aberto " id="aberto "> <!-- checkbox escolher mais de uma opção -->
+    <label> aberto </label>
+    <br/>
+    <input type="checkbox" name="fechado " id="fechado">
+    <label> fechado </label>
+    <br/>
+    <input type="checkbox" name="salao_festa " id="salao_festa">
+    <label> salão de festas  </label>
+    <br/>
+    
+   
+    <br/><br/>
+
+    <label> cidade do  evento : </label>
+    <select name="cidade" id="cidade"required>
+        <option value="" selected="selected"> --Selecione-- </option>
+        <option value="BH"> Belo Horizonte </option>
+        <option value="NL"> Nova Lima </option>
+        <option value="SB"> Sabará </option>
+        <option value="RP"> Raposos </option>
+        <option value="RC"> rio Acima </option>
+    </select>
+    <br>
+    <label >comentario</label>
+    <br>
+     <textarea name="coment " id="coment" cols=" 40" rows = "10 " maxlength="200" placeholder=" digite seu comentario "required></textarea> 
+    <br><br>
+    
+    <input type="submit"  name="enviar " id ="enviar" value="ENVIAR">
+    <input type="reset" name="limpar"  id="limpar" value="LIMPAR">
+    
+    </form>
+    </fieldset>
+    
+    </tr></td>
+      </table>
+
+</main>
+<!-- rodape  -->
+<footer>
+<p>  &COPY;Todos os Direitos Reservados - Diulie Mileide </p>
+
+
+
+</footer>
+
+</body>
+</html>

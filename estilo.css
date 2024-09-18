@@ -1,0 +1,367 @@
+/* reset de configuração  */
+
+
+/* CONFIGURAÇÃO PAGINA INICIO */
+
+
+*{
+margin:0;
+padding:0;
+border:none;
+text-decoration:none;
+list-style-type: none;
+
+}
+
+/* cor de fundo do site todo  */
+body { 
+   display: flex;
+   flex-direction: column; /* dispay flex para colocar o site todo em pafrao em coluna centralizado */
+   align-items: center ;
+    background-color: rgb(248, 232, 2);
+background-image: url(img/imagem\ fundo.jpg);
+background-repeat: repeat;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+
+
+
+
+
+}
+ /* 960px padrão de site sempre usar  */
+nav{ /* Tecla navegação */
+
+width:960px;
+height:50px;
+border-style:solid;
+border-color: rgb(224, 34, 193);
+border-width: 3px;
+background-color:rgb(248, 232, 2);
+/* border: 1px solid rgb(11, 168, 173); */
+margin-top: 3px; 
+/* margin: 10px 0 0 460px; */   
+border-radius: 8px ; /*arredonda as bordas*/
+box-shadow: 3px 3px 10px rgb(121, 155, 160); /* sobreamento da borda ,o primeiro e  o segundo numero  possição e  o terceiro numero a grossura da sobra */
+
+}
+/*iNICIO MENU CSS*/
+
+nav ul{
+
+margin: 0;
+padding:0;
+display: flex;
+justify-content: space-around;
+
+}
+nav ul li {
+    /* alinha de acordo com nav */
+line-height: 50px;
+
+}
+
+nav ul li a {
+
+color: rgb(0, 0, 0);
+font-weight:bolder;
+font-family: consolas ,Arial, Helvetica, sans-serif;
+font: 12;
+text-shadow: 2px 2px 4px rgb(175, 175, 168);
+transition: font-size , 0.3s;
+
+}
+
+nav ul li a:hover {
+border-bottom: 2px solid rgb(19, 18, 18);
+
+}
+
+
+/* FIM MENU CSS*/
+
+header{
+    width:960px;
+    height:500px;
+    border-style:solid;
+    border-color: rgb(224, 14, 143);
+    border-width: 3px;
+    background-color:  rgb(248, 232, 2);
+    /* border: 1px solid rgb(11, 168, 173); */
+    margin-top: 3px; 
+    /* margin: 10px 0 0 460px; */
+    border-radius: 8px ; /*arredonda as bordas*/
+box-shadow: 3px 3px 10px rgb(121, 155, 160);
+background-image: url(img/imagem\ 2.jpg);
+background-size: 960px 500px;
+background-repeat: no-repeat;
+background-position: center ;
+animation-name: slide;
+animation-duration: 6s ;
+animation-direction: alternate;
+animation-iteration-count: infinite;
+
+
+}
+
+
+@keyframes slide {
+
+    0%{background-image: url(img/imagem\ 1.jpg);} 
+    25%{background-image: url(img/imagem\ 3.jpg);} 
+    50%{background-image: url(img/imagem\ 4.jpg);} 
+    75%{background-image: url(img/imagem\ 5.jpg);} 
+    100%{background-image: url(img/imagem\ 6.jpg);} 
+
+}
+
+main{
+    display: flex;
+    flex-direction:column;
+    gap: 10px; 
+    justify-content: space-between;
+    width:960px;
+    height:600 px;
+    border-style:solid;
+    border-color: rgb(224, 14, 136);
+    border-width: 3px;
+    background-color: rgb(248, 232, 2);
+    /* border: 1px solid rgb(11, 168, 173); */
+    margin-top: 3px; 
+    /* margin: 10px 0 0 460px; */
+    border-radius: 8px ; /*arredonda as bordas*/
+box-shadow: 3px 3px 10px rgb(121, 155, 160);
+}
+
+
+.row{
+
+justify-content: space-between;/*usar todo o espaço da tela */
+display: flex;
+margin: 15px;border-radius: 8px ; /*arredonda as bordas*/
+box-shadow: 3px 3px 10px rgb(121, 155, 160);
+
+
+
+}
+
+section{
+
+width:400px;
+height:200px;
+border:1px solid rgb(206, 98, 116);
+background-color: rgb(247, 5, 154); 
+border-radius: 8px ; /*arredonda as bordas*/
+box-shadow: 3px 3px 10px rgb(121, 155, 160);
+}
+
+section img ,iframe {
+
+width:400px;
+height:200px;
+border-radius:8px;
+
+
+}
+
+aside{
+
+    width:550px;
+    height: 250px;
+    border:1px solid rgb(248, 232, 2);
+    background-color: rgb(166, 243, 77); 
+    border-radius: 8px ; /*arredonda as bordas*/
+box-shadow: 3px 3px 10px rgb(121, 155, 160);
+
+
+}
+
+aside h2{
+
+text-align: left;
+padding: 8px;
+font-family: 'Courier New', Courier, monospace;
+text-indent: 20px;
+
+}
+
+aside p {
+
+text-align: justify;
+padding: 8px;
+font-family: 'Times New Roman', Times, serif;
+font-size: 13pt;
+
+}
+
+
+
+footer{
+
+    width:960px;
+    height: 50px;
+    border-style:solid;
+    border-color: rgb(224, 14, 178);
+    border-width: 3px;
+    background-color:  rgb(248, 232, 2);
+    margin-top: 10px; 
+    margin-bottom: 10px;
+}
+footer p {
+
+text-align:center;
+line-height: 50px;
+font-style: italic;
+font-size: 15;
+
+
+}
+
+/* CONFIGURAÇÃO SOBRE*/ 
+
+
+#texto {
+
+width:960px;
+height:100px;
+border-style:solid;
+border-color: rgb(224, 14, 143);
+border-width: 3px;
+background-color:  rgb(248, 232, 2);
+/* border: 1px solid rgb(11, 168, 173); */
+margin-top: 3px; 
+/* margin: 10px 0 0 460px; */
+border-radius: 8px ; /*arredonda as bordas*/
+box-shadow: 3px 3px 10px rgb(121, 155, 160);
+background-position: center ;
+}
+
+
+#linha{
+
+    text-align: justify;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60pt;
+    border-radius: 8px ;
+    text-size-adjust:100px;
+}
+
+
+.txt{
+
+    width:400px;
+    height:250px;
+    border:1px solid rgb(206, 98, 116);
+    background-color: rgb(247, 5, 154); 
+    border-radius: 8px ; /*arredonda as bordas*/
+    box-shadow: 3px 3px 10px rgb(121, 155, 160);
+    }
+    .txt img ,iframe {
+
+        width:400px;
+        height:250px;
+        border-radius:8px;
+        
+    }  
+
+
+    .imfo{
+        width:960px;
+        height:500px;
+        border-style:solid;
+        border-color: rgb(224, 14, 143);
+        border-width: 3px;
+        background-color:  rgb(248, 232, 2);
+        /* border: 1px solid rgb(11, 168, 173); */
+        margin-top: 3px; 
+        /* margin: 10px 0 0 460px; */
+        border-radius: 8px ; /*arredonda as bordas*/
+        box-shadow: 3px 3px 10px rgb(121, 155, 160);
+  
+    
+    }
+
+/* FIM SOBRE */
+
+    /* INICIO CONTATO */
+
+
+    .formulario{
+        display: flex;
+        flex-direction:column;
+        gap: 10px; 
+        justify-content: space-between;
+        width:960px;
+        height: px;
+        border-style:solid;
+        border-color: rgb(224, 14, 136);
+        border-width: 3px;
+        background-color: rgb(248, 232, 2);
+        /* border: 1px solid rgb(11, 168, 173); */
+        margin-top: 3px; 
+        /* margin: 10px 0 0 460px; */
+        border-radius: 8px ; /*arredonda as bordas*/
+    box-shadow: 3px 3px 10px rgb(121, 155, 160);
+    }
+    
+    table{
+width: 600;
+
+    }
+
+    /* FIM CONTATO */
+
+    /*INICIO SERVIÇOS */
+
+
+
+    .p{
+        display: flex;
+        flex-direction:column;
+        gap: 10px; 
+        justify-content: space-between;
+        width:960px;
+        height:600 px;
+        border-style:solid;
+        border-color: rgb(224, 14, 136);
+        border-width: 3px;
+        background-color: rgb(248, 232, 2);
+        /* border: 1px solid rgb(11, 168, 173); */
+        margin-top: 3px; 
+        /* margin: 10px 0 0 460px; */
+        border-radius: 8px ; /*arredonda as bordas*/
+    box-shadow: 3px 3px 10px rgb(121, 155, 160);
+    }
+    
+
+
+
+    #serv {
+
+        width:960px;
+        height:px;
+        border-style:solid;
+        border-color: rgb(224, 14, 143);
+        border-width: 3px;
+        background-color:  rgb(248, 232, 2);
+        /* border: 1px solid rgb(11, 168, 173); */
+        margin-top: 3px; 
+        /* margin: 10px 0 0 460px; */
+        border-radius: 8px ; /*arredonda as bordas*/
+        box-shadow: 3px 3px 10px rgb(121, 155, 160);
+        background-position: center ;
+        }
+        
+
+
+
+
+
+
+
+
+
+
+
